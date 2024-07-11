@@ -57,4 +57,8 @@ $stmt->bind_param("ss", $password_hash, $user["id"]);
 
 $stmt->execute();
 
-echo "Password updated. You can now login.";
+// Redirect to the login page
+header("Location: http://localhost/php-simple-reset-password/login.php");
+exit;
+
+?>
